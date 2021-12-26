@@ -1,0 +1,23 @@
+<mat-form-field>
+    <mat-label>Select your news</mat-label>
+    <mat-select panelClass="dropDown-seasons-panel">
+        <mat-option value="angular">
+            <img with="20" height="20" src="assets/angular-icon.png">
+            Angular
+        </mat-option>
+        <mat-option value="react">
+            <img with="20" height="20" src="assets/react-icon.png">
+            Reacts
+        </mat-option>
+        <mat-option value="vuejs">
+            <img with="20" height="20" src="assets/vuejs-icon.png">
+            Vuejs
+        </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div *ngFor="let new of newsArray">
+      <div>
+        {{ new.author }}
+      </div>
+  </div>
